@@ -1,0 +1,938 @@
+* {
+    background: #fff;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body:hover {
+    cursor: default;
+}
+header {
+    width: 100%;
+    height: auto;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 80px 15px 0px;
+    width: 100%;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10%;
+}
+ul li {
+    list-style: none;
+}
+nav a,
+ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    transition: 0.5 ease-in-out;
+}
+ul li a:hover {
+    transform: translateY(-4px);
+    color: #aa1cd5;
+}
+.navbar-image {
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+}
+.navbars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.navbar-title {
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    color: #adabab;
+    box-shadow: 2px 2px #d51ccc;
+}
+.navbars svg {
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    color: #fff;
+    background: transparent;
+}
+.academic-cap {
+    width: 40px;
+    height: 40px;
+    background-color: #8713a1;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.navbar-home,
+.navbar-pedagogie,
+.navbar-life,
+.navbar-admission {
+    display: flex;
+    width: 120px;
+}
+.navbar-home svg,
+.navbar-pedagogie svg,
+.navbar-life svg,
+.connexion-space svg,
+.navbar-admission svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    vertical-align: middle;
+    margin-right: 0.4rem;
+    color: #d51ccc;
+}
+.connexion-space {
+    width: 200px;
+    background-color: #fff;
+    height: 30px;
+    border-radius: 4px;
+    box-shadow: 0px 0 2px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-one a svg,
+.link-two a svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    vertical-align: middle;
+    margin-right: 0.4rem;
+}
+.accueil-step-two img {
+    width: 500px;
+    height: 500px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.accueil {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 50px;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.parent-barre {
+    display: flex;
+    justify-content: start;
+    gap: 10%;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 40px;
+}
+.barre {
+    width: 50px;
+    height: 3px;
+    background-color: #d51ccc;
+}
+.barre-title p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d51ccc;
+
+}
+h2 {
+    letter-spacing: 10px;
+    line-height: 45px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+h2 span {
+    color: #aa1cd5;
+}
+.acceuil-texte {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5rem;
+    opacity: 0.5;
+    margin-bottom: 50px;
+}
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.link-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #1c63d5;
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+}
+.link-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #1c63d5;
+    width: 55%;
+    height: 50px;
+    border-radius: 10px;
+}
+.link-one a,
+.link-two a,
+.link-one a svg,
+.link-two a svg {
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.parent-circle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.circles {
+    display: flex;
+}
+.circle-one,
+.circle-two,
+.circle-three,
+.circle-four {
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+.circle-one {
+    background-color: #1c63d5;
+    z-index: 1;
+}
+.circle-two {
+    background-color: #d51ccc;
+    z-index: 2;
+    position: relative;
+    margin-left: -10px;
+}
+.circle-three {
+    background-color: aqua;
+    z-index: 3;
+    position: relative;
+    margin-left: -10px;
+}
+.circle-four {
+    background-color: bisque;
+    z-index: 4;
+    position: relative;
+    margin-left: -10px;
+}
+.points p {
+    color: #000;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.statistiques {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 40px 80px 80px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d6d5d542;
+    box-shadow: 2px 2px #fff;
+}
+.first-state,
+.second-state,
+.third-state,
+.fourth-state {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+}
+.first-state p,
+.second-state p,
+.third-state p,
+.fourth-state p {
+    text-align: center;
+    background-color: transparent;
+    opacity: 50%;
+    font-size: 12px;
+}
+h3 {
+    color: #c807cb;
+    font-size: 30px;
+    text-align: center;
+    background-color: transparent;
+}
+.container-card {
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+}
+.container {
+    margin: 30px;
+    margin-bottom: 20%;
+    margin-top: 20%;
+}
+.space-two svg,
+.space-three svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    vertical-align: middle;
+    background-color: transparent;
+}
+.container-barre-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #d811ce;
+}
+.container-title {
+    letter-spacing: normal;
+    font-size: 60px;
+    text-align: center;
+    line-height: 70px;
+}
+.container-barre-title p {
+    color: #d51ccc;
+    font-size: 18px;
+    font-weight: bold;
+}
+.container-span {
+    color: #d811ce;
+    background-color: transparent;
+}
+.container-texte {
+    text-align: center;
+    font-size: 18px;
+    opacity: 50%;
+}
+.card-one,
+.card-two,
+.card-three {
+    background-color: #fff;
+    box-shadow: 5px 0px 5px 5px #ccc;
+    border-radius: 10px;
+    width: 27%;
+    padding: 20px;
+    margin-top: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+.card-icone {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    background-color: transparent;
+}
+.space-one {
+    background-color: #999ee862;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space-two {
+    background-color: #efdb0662;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space-three {
+    background-color: #99e8a562;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space-one svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    vertical-align: middle;
+    background-color: transparent;
+    color: blue;
+}
+.space-two svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    vertical-align: middle;
+    background-color: transparent;
+    color: rgb(165, 131, 4);
+}
+.space-three svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    vertical-align: middle;
+    background-color: transparent;
+    color: rgb(3, 198, 16);
+}
+.number {
+    background-color: transparent;
+    color: #000;
+    opacity: 0.5;
+}
+.card-title {
+    font-size: 18px;
+    color: #000;
+    text-align: start;
+    margin-left: 8px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-one p,
+.card-two p,
+.card-three p {
+    text-align: justify;
+    font-size: 12px;
+    opacity: 0.5;
+}
+.card-one:hover,
+.card-two:hover,
+.card-three:hover {
+    transform: translateY(-4px);
+}
+.experience {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 50px;
+}
+.image img {
+    width: 500px;
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 50%;
+}
+.experience-barre-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 7%;
+    margin-bottom: 20px;
+}
+.experience-barre-title p {
+    font-size: 17px;
+    font-weight: bold;
+    color: #8713a1;
+}
+.experience-bar {
+    width: 40px;
+    height: 3px;
+    background-color: #8713a1;
+}
+.experience-title {
+    font-size: 60px;
+    letter-spacing: normal;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+.experience-title span {
+    background-color: transparent;
+}
+.experience-description {
+    font-size: 15px;
+    opacity: 0.5;
+    text-align: justify;
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+.quality {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+}
+.quality-one {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5%;
+}
+.icone-place {
+    background-color: #999ee862;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icone-place svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    color: blue;
+    background: transparent;
+}
+.icone-texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.icone-texte p {
+    font-size: 12px;
+    opacity: 0.5;
+}
+.image-texte {
+    width: 400px;
+    height: 90px;
+    background-color: #b7acfa96;
+    position: relative;
+    z-index: 1;
+    margin-top: -100px;
+    margin-left: 30%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: blue;
+    font-weight: bold;
+}
+.visite-link svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    color: blue;
+    background: transparent;
+}
+.visite {
+    margin: 30px;
+    background-color: #1c63d5;
+    padding: 20px;
+    height: 350px;
+    margin-top: 130px;
+    border-radius: 12px;
+}
+
+.visites {
+    background-color: #1c63d5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.visite-items,
+.visite-colonne p,
+h5,
+.visite-items p,
+.visite-colonne {
+    background-color: #1c63d5;
+}
+.visite-link {
+    padding: 10px;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.visite-link a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1c63d5;
+}
+.visite-colonne {
+    padding: 20px;
+}
+.visite-bar {
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+}
+.visite-items {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.visite-items p {
+    color: #fff;
+    font-weight: bold;
+}
+h5 {
+    font-size: 80px;
+    line-height: 70px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.visite-colonne p {
+    color: #fff;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 12px 24px;
+        gap: 16px;
+    }
+    .navbar-links {
+        gap: 16px;
+    }
+    .navbar-home,
+    .navbar-pedagogie,
+    .navbar-life,
+    .navbar-admission {
+        width: auto;
+    }
+    .connexion-space {
+        width: auto;
+        padding: 0 12px;
+    }
+    .accueil {
+        flex-direction: column;
+        gap: 20px;
+        margin: 60px 32px 30px;
+    }
+    .accueil-step-one {
+        width: 100%;
+        min-width: 0;
+    }
+    .accueil-step-two {
+        display: none;
+    }
+    .parent-barre {
+        width: 100%;
+    }
+    .target {
+        font-size: 28px;
+        letter-spacing: 2px;
+        line-height: 1.3;
+    }
+    .acceuil-texte br {
+        display: none;
+    }
+    .link {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .link-one,
+    .link-two {
+        flex: 1 1 200px;
+        width: auto;
+    }
+    .parent-circle {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+    .statistiques {
+        margin: 0 32px 64px;
+        flex-wrap: wrap;
+    }
+    .first-state,
+    .second-state,
+    .third-state,
+    .fourth-state {
+        flex: 1 1 160px;
+    }
+    .container {
+        margin: 80px 32px;
+    }
+    .container-title {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+    .container-card {
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 30px 0;
+    }
+    .card-one,
+    .card-two,
+    .card-three {
+        width: calc(50% - 10px);
+        margin-top: 0;
+    }
+    .experience {
+        margin: 0 32px 50px;
+        gap: 32px;
+    }
+    .image,
+    .details {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+    .image img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+    .image-texte {
+        width: 90%;
+        margin-left: 10%;
+        padding: 12px;
+        text-align: center;
+    }
+    .experience-title {
+        font-size: 48px;
+    }
+    .experience-description {
+        margin-right: 0;
+    }
+    .quality {
+        gap: 24px;
+    }
+    .visite {
+        height: auto;
+        margin: 80px 32px 30px;
+    }
+    .visites {
+        gap: 24px;
+    }
+    h5 {
+        font-size: 56px;
+        line-height: 1.1;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 12px 16px;
+    }
+    .navbar-links {
+        order: 3;
+        flex: 1 0 100%;
+        justify-content: space-between;
+        gap: 8px;
+    }
+    .navbar-home,
+    .navbar-pedagogie,
+    .navbar-life,
+    .navbar-admission {
+        align-items: center;
+        font-size: 11px;
+    }
+    .navbar-home svg,
+    .navbar-pedagogie svg,
+    .navbar-life svg,
+    .navbar-admission svg {
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+    }
+    .academic-cap {
+        margin-left: 0;
+    }
+    .navbar-title {
+        font-size: 18px;
+    }
+    .connexion-space {
+        height: 34px;
+        font-size: 12px;
+    }
+    .accueil {
+        margin: 40px 20px 30px;
+    }
+    .parent-barre {
+        gap: 16px;
+        margin-bottom: 28px;
+    }
+    .target {
+        font-size: clamp(24px, 7vw, 32px);
+        letter-spacing: 1px;
+        line-height: 1.25;
+    }
+    .acceuil-texte {
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    .acceuil-texte br {
+        display: none;
+    }
+    .link {
+        align-items: stretch;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+    .link-one,
+    .link-two {
+        flex: 0 0 auto;
+        width: 100%;
+        min-height: 48px;
+    }
+    .parent-circle {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .circle-one,
+    .circle-two,
+    .circle-three,
+    .circle-four {
+        width: 48px;
+        height: 48px;
+        font-size: 15px;
+    }
+    .points p {
+        font-size: 16px;
+    }
+    .statistiques {
+        margin: 0 16px 48px;
+        padding: 12px 8px;
+        gap: 4px;
+    }
+    .first-state,
+    .second-state,
+    .third-state,
+    .fourth-state {
+        flex: 1 1 40%;
+        padding: 8px 4px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .container {
+        margin: 64px 20px;
+    }
+    .container-barre-title {
+        gap: 12px;
+    }
+    .container-barre-title p {
+        font-size: 16px;
+    }
+    .container-title {
+        font-size: clamp(32px, 9vw, 42px);
+        line-height: 1.15;
+    }
+    .container-texte {
+        font-size: 16px;
+    }
+    .container-card {
+        flex-direction: column;
+        margin: 24px 0;
+    }
+    .card-one,
+    .card-two,
+    .card-three {
+        width: 100%;
+        padding: 18px;
+    }
+    .experience {
+        flex-direction: column;
+        margin: 0 20px 40px;
+        gap: 32px;
+    }
+    .image,
+    .details {
+        width: 100%;
+    }
+    .image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+    .image-texte {
+        width: 90%;
+        min-height: 72px;
+        height: auto;
+        margin: -36px auto 0;
+        padding: 14px;
+        text-align: center;
+    }
+    .experience-barre-title {
+        gap: 14px;
+    }
+    .experience-barre-title p {
+        font-size: 15px;
+    }
+    .experience-title {
+        font-size: clamp(36px, 10vw, 48px);
+        line-height: 1.1;
+    }
+    .experience-description {
+        text-align: left;
+    }
+    .quality {
+        gap: 24px;
+    }
+    .quality-one {
+        gap: 16px;
+    }
+    .icone-texte {
+        min-width: 0;
+    }
+    .visite {
+        margin: 64px 16px 20px;
+        padding: 20px 16px;
+    }
+    .visite-items {
+        gap: 12px;
+    }
+    .visites {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+    .visite-colonne {
+        padding: 8px 0;
+    }
+    h5 {
+        font-size: clamp(40px, 11vw, 56px);
+        line-height: 1.05;
+    }
+    .visite-colonne p {
+        letter-spacing: 1px;
+    }
+    .visite-link {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .navbar-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 12px;
+        row-gap: 10px;
+    }
+    .navbar-home,
+    .navbar-pedagogie,
+    .navbar-life,
+    .navbar-admission {
+        flex: 0 0 calc(50% - 12px);
+        justify-content: center;
+    }
+}
